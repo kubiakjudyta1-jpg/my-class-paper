@@ -11,6 +11,7 @@ import DniWolnePage from "./pages/DniWolnePage";
 import SwietaPage from "./pages/SwietaPage";
 import AktywnePrzerwyPage from "./pages/AktywnePrzerwyPage";
 import KontaktPage from "./pages/KontaktPage";
+import OpiniePage from "./pages/OpiniePage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -30,6 +31,7 @@ const App = () => (
             <Route path="/swieta" element={<SwietaPage />} />
             <Route path="/aktywne-przerwy" element={<AktywnePrzerwyPage />} />
             <Route path="/kontakt" element={<KontaktPage />} />
+            <Route path="/opinie" element={<OpiniePage />} />
           </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>

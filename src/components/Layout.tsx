@@ -1,5 +1,5 @@
 import { NavLink, Outlet } from "react-router-dom";
-import { Lightbulb, Newspaper, Trophy, Calendar, Gift, BookOpen, Mail } from "lucide-react";
+import { Lightbulb, Newspaper, Trophy, Calendar, Gift, BookOpen, Mail, MessageSquare } from "lucide-react";
 
 const navItems = [
   { to: "/", label: "Strona Główna", icon: Newspaper },
@@ -9,6 +9,7 @@ const navItems = [
   { to: "/swieta", label: "Święta", icon: Gift },
   { to: "/aktywne-przerwy", label: "Aktywne Przerwy", icon: Lightbulb },
   { to: "/kontakt", label: "Kontakt", icon: Mail },
+  { to: "/opinie", label: "Opinie", icon: MessageSquare },
 ];
 
 const Layout = () => {
