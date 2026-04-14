@@ -5,11 +5,8 @@ const navItems = [
   { to: "/", label: "Strona Główna", icon: Newspaper },
   { to: "/newsy", label: "Newsy", icon: BookOpen },
   { to: "/konkurs", label: "Konkurs", icon: Trophy },
-  { to: "/dni-wolne", label: "Dni Wolne", icon: Calendar },
+  { to: "/dni-wolne", label: "Nietypowe Święta", icon: Calendar },
   { to: "/swieta", label: "Święta", icon: Gift },
-  { to: "/aktywne-przerwy", label: "Aktywne Przerwy", icon: Lightbulb },
-  { to: "/kontakt", label: "Kontakt", icon: Mail },
-  { to: "/opinie", label: "Opinie", icon: MessageSquare },
 ];
 
 const Layout = () => {

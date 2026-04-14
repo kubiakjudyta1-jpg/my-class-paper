@@ -8,7 +8,7 @@ const holidays = [
 
 const DniWolnePage = () => (
   <div className="space-y-8 max-w-2xl mx-auto">
-    <h2 className="newspaper-section-title text-center">Dni Wolne</h2>
+    <h2 className="newspaper-section-title text-center">Nietypowe Święta</h2>
     <div className="newspaper-divider" />
 
     <p className="text-center text-muted-foreground">
