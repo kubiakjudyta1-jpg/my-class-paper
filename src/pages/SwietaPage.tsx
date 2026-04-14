@@ -1,6 +1,6 @@
 const SwietaPage = () => (
   <div className="space-y-8 max-w-2xl mx-auto">
-    <h2 className="newspaper-section-title text-center">Nietypowe Święta</h2>
+    <h2 className="newspaper-section-title text-center">Święta i wydarzenia</h2>
     <div className="newspaper-divider" />
 
     <article className="bg-card border border-border rounded-lg p-6 space-y-3">
