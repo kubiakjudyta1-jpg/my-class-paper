@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Sans+3:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -90,10 +90,10 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-family: 'Source Sans 3', sans-serif;
+    font-family: 'Lato', sans-serif;
   }
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Lato', sans-serif;
   }
 }
 
@@ -103,12 +103,12 @@
     border-color: hsl(var(--newspaper-border));
   }
   .newspaper-section-title {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Lato', sans-serif;
     color: hsl(var(--newspaper-headline));
     @apply text-3xl font-black uppercase tracking-wide;
   }
   .drop-cap::first-letter {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Lato', sans-serif;
     @apply float-left text-5xl font-black mr-2 leading-none;
     color: hsl(var(--primary));
   }
