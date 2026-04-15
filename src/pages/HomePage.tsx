@@ -6,7 +6,7 @@ import { Trophy, Calendar, Gift, Lightbulb, BookOpen, Mail } from "lucide-react"
 const sections = [
   { to: "/newsy", label: "Newsy", icon: BookOpen, desc: "Najnowsze wiadomości ze szkoły" },
   { to: "/konkurs", label: "Konkurs", icon: Trophy, desc: "Konkurs na logo gazetki" },
-  { to: "/dni-wolne", label: "Dni Wolne", icon: Calendar, desc: "Nadchodzące dni wolne" },
+  { to: "/dni-wolne", label: "Nietypowe Święta", icon: Calendar, desc: "Nadchodzące dni wolne" },
   { to: "/swieta", label: "Święta", icon: Gift, desc: "Święta i wydarzenia" },
   { to: "/aktywne-przerwy", label: "Aktywne Przerwy", icon: Lightbulb, desc: "Innowacyjne przerwy w szkole" },
   { to: "/kontakt", label: "Kontakt", icon: Mail, desc: "Napisz do nas!" },
@@ -24,7 +24,7 @@ const HomePage = () => (
     </section>
 
     {/* School photo */}
-    <section className="rounded-lg overflow-hidden border-2 border-newspaper-border">
+    <section className="glass rounded-xl overflow-hidden">
       <img src={schoolImg} alt="Budynek szkoły SP8 Kołobrzeg" width={800} height={512} className="w-full object-cover max-h-72" loading="lazy" />
     </section>
 
@@ -35,10 +35,10 @@ const HomePage = () => (
           <Link
             key={to}
             to={to}
-            className="group bg-card border border-border rounded-lg p-5 hover:border-primary hover:shadow-md transition-all"
+            className="group glass rounded-xl p-5 hover:scale-[1.02] transition-all"
           >
             <Icon className="w-8 h-8 text-primary mb-3 group-hover:scale-110 transition-transform" />
-            <h3 className="font-serif font-bold text-lg text-card-foreground">{label}</h3>
+            <h3 className="font-bold text-lg text-card-foreground">{label}</h3>
             <p className="text-muted-foreground text-sm mt-1">{desc}</p>
           </Link>
         ))}

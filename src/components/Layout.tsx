@@ -14,14 +14,14 @@ const navItems = [
 
 const Layout = () => {
   return (
-    <div className="min-h-screen flex flex-col bg-background">
+    <div className="min-h-screen flex flex-col liquid-bg">
       {/* Header */}
-      <header className="border-b-2 border-newspaper-border bg-card">
+      <header className="glass-header sticky top-0 z-50">
         <div className="container max-w-5xl mx-auto px-4 py-6 text-center">
-          <h1 className="text-5xl md:text-6xl font-black font-serif tracking-tight text-newspaper-headline">
+          <h1 className="text-5xl md:text-6xl font-black tracking-tight" style={{ color: 'hsl(var(--newspaper-headline))' }}>
             ŻARÓWKA
           </h1>
-          <p className="text-muted-foreground text-sm mt-1 font-sans">
+          <p className="text-muted-foreground text-sm mt-1">
             Gazetka Szkoły Podstawowej nr 8 im. Kpt. zw. Konstantego Maciejewicza w Kołobrzegu
           </p>
           <div className="newspaper-divider mt-4" />
@@ -29,17 +29,17 @@ const Layout = () => {
 
         {/* Navigation */}
         <nav className="container max-w-5xl mx-auto px-4 pb-3">
-          <ul className="flex flex-wrap justify-center gap-1 md:gap-2">
+          <ul className="flex flex-wrap justify-center gap-1.5 md:gap-2">
             {navItems.map(({ to, label, icon: Icon }) => (
               <li key={to}>
                 <NavLink
                   to={to}
                   end={to === "/"}
                   className={({ isActive }) =>
-                    `flex items-center gap-1.5 px-3 py-1.5 rounded-md text-sm font-semibold font-sans transition-colors ${
+                    `flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-sm font-semibold transition-all ${
                       isActive
-                        ? "bg-primary text-primary-foreground"
-                        : "text-secondary-foreground hover:bg-secondary"
+                        ? "glass-pill-active text-primary-foreground"
+                        : "glass-pill text-secondary-foreground"
                     }`
                   }
                 >
@@ -58,8 +58,8 @@ const Layout = () => {
       </main>
 
       {/* Footer */}
-      <footer className="border-t-2 border-newspaper-border bg-card py-4 text-center">
-        <p className="text-muted-foreground text-xs font-sans">
+      <footer className="glass-header py-4 text-center">
+        <p className="text-muted-foreground text-xs">
           © 2026 ŻARÓWKA — Gazetka SP8 Kołobrzeg | Pierwsze wydanie
         </p>
       </footer>

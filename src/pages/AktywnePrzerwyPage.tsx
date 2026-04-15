@@ -10,19 +10,19 @@ const AktywnePrzerwyPage = () => (
     </p>
 
     <div className="grid sm:grid-cols-2 gap-6">
-      <div className="bg-card border-2 border-primary rounded-lg p-6 text-center space-y-3">
+      <div className="glass rounded-xl p-6 text-center space-y-3 border-primary/30">
         <BookOpen className="w-12 h-12 text-primary mx-auto" />
-        <h3 className="font-serif text-xl font-bold text-card-foreground">Przerwa na czytanie</h3>
+        <h3 className="text-xl font-bold text-card-foreground">Przerwa na czytanie</h3>
         <p className="text-muted-foreground">Czwartki</p>
-        <p className="text-2xl font-bold font-serif text-primary">11:30 – 11:45</p>
+        <p className="text-2xl font-bold text-primary">11:30 – 11:45</p>
         <p className="text-muted-foreground">📍 Sala 203</p>
       </div>
 
-      <div className="bg-card border-2 border-accent rounded-lg p-6 text-center space-y-3">
+      <div className="glass rounded-xl p-6 text-center space-y-3 border-accent/30">
         <Activity className="w-12 h-12 text-accent mx-auto" />
-        <h3 className="font-serif text-xl font-bold text-card-foreground">Przerwa na skakanie</h3>
+        <h3 className="text-xl font-bold text-card-foreground">Przerwa na skakanie</h3>
         <p className="text-muted-foreground">Piątki</p>
-        <p className="text-2xl font-bold font-serif text-accent">12:30 – 12:45</p>
+        <p className="text-2xl font-bold text-accent">12:30 – 12:45</p>
         <p className="text-muted-foreground">📍 Sala 210</p>
       </div>
     </div>
