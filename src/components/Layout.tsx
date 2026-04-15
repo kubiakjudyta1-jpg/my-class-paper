@@ -1,5 +1,5 @@
 import { NavLink, Outlet } from "react-router-dom";
-import { Lightbulb, Newspaper, Trophy, Calendar, Gift, BookOpen, Mail, MessageSquare } from "lucide-react";
+import { Lightbulb, Newspaper, Trophy, Gift, BookOpen, Mail, MessageSquare } from "lucide-react";
 
 const navItems = [
   { to: "/", label: "Strona Główna", icon: Newspaper },
