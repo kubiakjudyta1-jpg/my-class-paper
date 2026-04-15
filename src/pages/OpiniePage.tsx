@@ -83,9 +83,9 @@ const OpiniePage = () => {
       {/* Form */}
       <form
         onSubmit={handleSubmit}
-        className="bg-card border-2 border-primary rounded-lg p-6 space-y-4"
+        className="glass rounded-xl p-6 space-y-4"
       >
-        <h3 className="font-serif text-xl font-bold text-card-foreground flex items-center gap-2">
+        <h3 className="text-xl font-bold text-card-foreground flex items-center gap-2">
           <MessageSquare className="w-5 h-5 text-primary" />
           Zostaw swoją opinię
         </h3>
@@ -95,7 +95,7 @@ const OpiniePage = () => {
           value={name}
           onChange={(e) => setName(e.target.value)}
           maxLength={50}
-          className="bg-background"
+          className="bg-background/50 backdrop-blur-sm"
         />
 
         <div className="space-y-1">
@@ -128,10 +128,10 @@ const OpiniePage = () => {
           onChange={(e) => setMessage(e.target.value)}
           maxLength={500}
           rows={3}
-          className="bg-background"
+          className="bg-background/50 backdrop-blur-sm"
         />
 
-        <Button type="submit" className="w-full gap-2">
+        <Button type="submit" className="w-full gap-2 rounded-xl">
           <Send className="w-4 h-4" />
           Wyślij opinię
         </Button>
@@ -142,7 +142,7 @@ const OpiniePage = () => {
         {opinions.map((op) => (
           <div
             key={op.id}
-            className="bg-card border border-border rounded-lg p-4 space-y-2"
+            className="glass rounded-xl p-4 space-y-2"
           >
             <div className="flex items-center justify-between">
               <span className="font-semibold text-card-foreground">{op.name}</span>
