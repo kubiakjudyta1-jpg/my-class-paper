@@ -8,7 +8,7 @@ const holidays = [
 
 const DniWolnePage = () => (
   <div className="space-y-8 max-w-2xl mx-auto">
-    <h2 className="newspaper-section-title text-center">Dni Wolne</h2>
+    <h2 className="newspaper-section-title text-center">Nietypowe Święta</h2>
     <div className="newspaper-divider" />
 
     <p className="text-center text-muted-foreground">
@@ -17,10 +17,10 @@ const DniWolnePage = () => (
 
     <div className="space-y-4">
       {holidays.map((h) => (
-        <div key={h.name} className="bg-card border border-border rounded-lg p-5 flex items-center gap-4">
+        <div key={h.name} className="glass rounded-xl p-5 flex items-center gap-4">
           <span className="text-4xl">{h.emoji}</span>
           <div>
-            <p className="font-serif font-bold text-lg text-card-foreground">{h.name}</p>
+            <p className="font-bold text-lg text-card-foreground">{h.name}</p>
             <p className="text-muted-foreground flex items-center gap-1">
               <Calendar className="w-4 h-4" />
               {h.date}
