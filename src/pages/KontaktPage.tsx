@@ -1,11 +1,14 @@
 import { Mail, Send } from "lucide-react";
+import { Reveal } from "@/components/Reveal";
 
 const KontaktPage = () => (
   <div className="space-y-8 max-w-2xl mx-auto">
-    <h2 className="newspaper-section-title text-center">Kontakt</h2>
-    <div className="newspaper-divider" />
+    <Reveal>
+      <h2 className="newspaper-section-title text-center">Kontakt</h2>
+      <div className="newspaper-divider mt-4" />
+    </Reveal>
 
-    <div className="glass rounded-xl p-8 text-center space-y-6">
+    <Reveal delay={100} className="glass rounded-xl p-8 text-center space-y-6">
       <Mail className="w-16 h-16 text-primary mx-auto" />
       <h3 className="text-2xl font-bold text-card-foreground">Napisz do nas!</h3>
       <p className="text-foreground leading-relaxed">
@@ -23,7 +26,7 @@ const KontaktPage = () => (
       <p className="text-muted-foreground text-sm">
         Zachęcamy do przesyłania informacji!
       </p>
-    </div>
+    </Reveal>
   </div>
 );
 
