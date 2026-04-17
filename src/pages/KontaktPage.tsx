@@ -26,7 +26,7 @@ const KontaktPage = () => (
       <p className="text-muted-foreground text-sm">
         Zachęcamy do przesyłania informacji!
       </p>
-    </div>
+    </Reveal>
   </div>
 );
 
