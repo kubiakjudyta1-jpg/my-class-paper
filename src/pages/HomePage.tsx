@@ -6,9 +6,9 @@ import { Reveal } from "@/components/Reveal";
 
 const sections = [
   { to: "/newsy", label: "Newsy", icon: BookOpen, desc: "Najnowsze wiadomości ze szkoły" },
-  { to: "/konkurs", label: "Konkurs", icon: Trophy, desc: "Konkurs na logo gazetki" },
-  { to: "/dni-wolne", label: "Nietypowe Święta", icon: Calendar, desc: "Nadchodzące dni wolne" },
-  { to: "/swieta", label: "Święta", icon: Gift, desc: "Święta i wydarzenia" },
+  { to: "/konkurs", label: "Konkurs", icon: Trophy, desc: "Wyniki i nowy konkurs fotograficzny" },
+  { to: "/dni-wolne", label: "Nietypowe Święta", icon: Calendar, desc: "Dni wolne w maju" },
+  { to: "/swieta", label: "Nietypowe Święta", icon: Gift, desc: "Święta i wydarzenia" },
   { to: "/aktywne-przerwy", label: "Aktywne Przerwy", icon: Lightbulb, desc: "Innowacyjne przerwy w szkole" },
   { to: "/kontakt", label: "Kontakt", icon: Mail, desc: "Napisz do nas!" },
 ];
@@ -20,7 +20,7 @@ const HomePage = () => (
       <img src={heroImg} alt="Żarówka - gazetka szkolna" width={1024} height={512} className="mx-auto max-w-xs md:max-w-md" />
       <h2 className="newspaper-section-title">Witamy w Żarówce!</h2>
       <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-        Witamy serdecznie czytelników pierwszego numeru naszego nowego pisma! Będziemy pokazywać w niej najważniejsze wydarzenia z naszego szkolnego życia.
+        Z przyjemnością prezentujemy drugie wydanie naszej szkolnej gazetki. Po pierwszym numerze, który spotkał się z dużym zainteresowaniem, przygotowaliśmy dla Was jeszcze więcej ciekawych treści. Zapraszamy do lektury!
       </p>
     </Reveal>
 
