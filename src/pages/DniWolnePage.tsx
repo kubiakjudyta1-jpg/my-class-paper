@@ -1,10 +1,9 @@
-import { Calendar, Candy, Bird, Croissant, LucideIcon } from "lucide-react";
+import { Calendar, Sun } from "lucide-react";
 import { Reveal } from "@/components/Reveal";
 
-const holidays: { date: string; name: string; icon: LucideIcon }[] = [
-  { date: "28 marca", name: "Dzień Żelków", icon: Candy },
-  { date: "9 kwietnia", name: "Światowy Dzień Gołębia", icon: Bird },
-  { date: "24 kwietnia", name: "Europejski Dzień Śniadania", icon: Croissant },
+const freeDays = [
+  { range: "1–3 maja 2026", label: "Majówka" },
+  { range: "11–13 maja 2026", label: "Dodatkowe dni wolne" },
 ];
 
 const DniWolnePage = () => (
@@ -14,22 +13,20 @@ const DniWolnePage = () => (
       <div className="newspaper-divider mt-4" />
     </Reveal>
 
-    <Reveal delay={80}>
-      <p className="text-center text-muted-foreground">
-        Czy wiecie, że w najbliższych miesiącach będziecie mogli obchodzić takie święta jak:
+    <Reveal delay={80} className="glass rounded-xl p-6 text-center space-y-3">
+      <Sun className="w-12 h-12 text-primary mx-auto" />
+      <p className="text-foreground leading-relaxed">
+        Każdy powoli zaczyna odliczać dni do wakacji. A my możemy zdradzić Wam długo wyczekiwane wieści. W maju mamy jeszcze trochę wolnego:
       </p>
     </Reveal>
 
     <div className="space-y-4">
-      {holidays.map((h, i) => (
-        <Reveal key={h.name} delay={160 + i * 80} className="glass rounded-xl p-5 flex items-center gap-4">
-          <h.icon className="w-10 h-10 text-primary shrink-0" />
+      {freeDays.map((d, i) => (
+        <Reveal key={d.range} delay={160 + i * 80} className="glass rounded-xl p-5 flex items-center gap-4">
+          <Calendar className="w-10 h-10 text-primary shrink-0" />
           <div>
-            <p className="font-bold text-lg text-card-foreground">{h.name}</p>
-            <p className="text-muted-foreground flex items-center gap-1">
-              <Calendar className="w-4 h-4" />
-              {h.date}
-            </p>
+            <p className="font-bold text-lg text-card-foreground">{d.range}</p>
+            <p className="text-muted-foreground">{d.label}</p>
           </div>
         </Reveal>
       ))}
