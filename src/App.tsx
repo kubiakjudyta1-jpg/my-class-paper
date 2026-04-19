@@ -21,7 +21,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename="/my-class-paper">
         <Routes>
           <Route element={<Layout />}>
             <Route path="/" element={<HomePage />} />
