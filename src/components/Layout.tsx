@@ -23,6 +23,16 @@ const Layout = () => {
           <p className="text-muted-foreground text-sm mt-1">
             Gazetka Szkoły Podstawowej nr 8 im. Kpt. zw. Konstantego Maciejewicza w Kołobrzegu
           </p>
+          <p className="text-muted-foreground text-xs mt-1 flex items-center justify-center gap-1 flex-wrap">
+            Redakcja:
+            <span className="inline-flex items-center gap-0.5 font-semibold">
+              Kubiak Judyta <Lightbulb className="w-3.5 h-3.5 text-yellow-500" />
+            </span>
+            ,
+            <span className="inline-flex items-center gap-0.5 font-semibold">
+              Martyniuk Aleksandra <Lightbulb className="w-3.5 h-3.5 text-yellow-500 rotate-180" />
+            </span>
+          </p>
           <div className="newspaper-divider mt-4" />
         </div>
 
