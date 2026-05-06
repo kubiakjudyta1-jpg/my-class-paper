@@ -14,7 +14,7 @@ const KonkursPage = () => (
         Wyniki konkursu na logo
       </h3>
       <p className="text-foreground leading-relaxed text-left">
-        Czy pamiętacie jeszcze konkurs na logo naszego wydawnictwa? Termin oddania prac już minął, a wiele prac zostało zgłoszonych do nas. Mieliśmy bardzo trudny wybór, bo wszystkie pomysły były bardzo kreatywne. Ale na szczęście udało nam się podjąć decyzję. Zwycięzca naszego konkursu chciał zostać anonimowy, a my spełnimy jego prośbę. Dziękujemy Wam za udział w konkursie!
+        Czy pamiętacie jeszcze konkurs na logo naszego wydawnictwa? Termin oddania prac już minął, a wiele prac zostało zgłoszonych do nas. Mieliśmy bardzo trudny wybór, bo wszystkie pomysły były bardzo kreatywne. Ale na szczęście udało nam się podjąć decyzję. Zwycięzcą naszego konkursu została Wiera Dębiecz z klasy 6a. Serdecznie jej gratulujemy i dziękujemy wszystkim za udział w konkursie!
       </p>
     </Reveal>
 
