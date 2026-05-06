@@ -1,4 +1,4 @@
-import heroImg from "@/assets/zarowka-hero.png";
+import heroImg from "@/assets/zarowka-logo.png";
 import schoolImg from "@/assets/school-building.jpg";
 import { Link } from "react-router-dom";
 import { Trophy, Calendar, Gift, Lightbulb, BookOpen, Mail } from "lucide-react";
