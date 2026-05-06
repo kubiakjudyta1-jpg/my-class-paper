@@ -71,6 +71,9 @@ const Layout = () => {
         <p className="text-muted-foreground text-xs">
           © 2026 ŻARÓWKA — Gazetka SP8 Kołobrzeg | Pierwsze wydanie
         </p>
+        <p className="text-muted-foreground text-[10px] mt-2 px-4 max-w-2xl mx-auto italic">
+          Przepraszamy za ewentualne błędy w tekście — strona jest tworzona przy pomocy sztucznej inteligencji, dlatego u każdej osoby może prezentować się nieco inaczej.
+        </p>
       </footer>
     </div>
   );
