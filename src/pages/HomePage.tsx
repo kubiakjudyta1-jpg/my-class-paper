@@ -17,7 +17,7 @@ const HomePage = () => (
   <div className="space-y-10">
     {/* Hero */}
     <Reveal as="section" className="text-center space-y-4">
-      <img src={heroImg} alt="Żarówka - gazetka szkolna" width={1024} height={512} className="mx-auto max-w-[200px] md:max-w-xs lg:max-w-sm" />
+      <img src={heroImg} alt="Żarówka - gazetka szkolna" width={1024} height={512} className="mx-auto max-w-[260px] md:max-w-md lg:max-w-lg" />
       <h2 className="newspaper-section-title">Witamy w Żarówce!</h2>
       <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
         Z przyjemnością prezentujemy drugie wydanie naszej szkolnej gazetki. Po pierwszym numerze, który spotkał się z dużym zainteresowaniem, przygotowaliśmy dla Was jeszcze więcej ciekawych treści. Zapraszamy do lektury!
