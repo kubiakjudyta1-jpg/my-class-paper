@@ -2,21 +2,20 @@ import { Calendar, Sun } from "lucide-react";
 import { Reveal } from "@/components/Reveal";
 
 const freeDays = [
-  { range: "1–3 maja 2026", label: "Majówka" },
-  { range: "11–13 maja 2026", label: "Dodatkowe dni wolne" },
+  { range: "4–5 czerwca 2026", label: "Boże Ciało" },
 ];
 
 const DniWolnePage = () => (
   <div className="space-y-8 max-w-2xl mx-auto">
     <Reveal>
-      <h2 className="newspaper-section-title text-center">Nietypowe Święta</h2>
+      <h2 className="newspaper-section-title text-center">Dni Wolne</h2>
       <div className="newspaper-divider mt-4" />
     </Reveal>
 
     <Reveal delay={80} className="glass rounded-xl p-6 text-center space-y-3">
       <Sun className="w-12 h-12 text-primary mx-auto" />
       <p className="text-foreground leading-relaxed">
-        Każdy powoli zaczyna odliczać dni do wakacji. A my możemy zdradzić Wam długo wyczekiwane wieści. W maju mamy jeszcze trochę wolnego:
+        Każdy powoli zaczyna odliczać dni do wakacji. A my możemy zdradzić Wam długo wyczekiwane wieści. W czerwcu mamy jeszcze trochę wolnego:
       </p>
     </Reveal>
 
