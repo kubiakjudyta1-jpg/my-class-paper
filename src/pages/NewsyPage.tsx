@@ -26,9 +26,9 @@ const NewsyPage = () => (
     <Reveal as="article" className="glass rounded-xl p-6 flex gap-4 items-start">
       <Film className="w-7 h-7 text-primary shrink-0 mt-1" />
       <div className="space-y-2">
-        <h3 className="text-xl font-bold text-card-foreground">Recenzja filmu: „Charlie and the Chocolate Factory"</h3>
+        <h3 className="text-xl font-bold text-card-foreground">Recenzja filmu: „The Angry Birds Movie"</h3>
         <p className="text-foreground leading-relaxed">
-          Charlie and the Chocolate Factory to magiczny, trochę mroczny i bardzo kreatywny film, który wciąga od pierwszych minut. Historia Charliego i ekscentrycznego Willy'ego Wonki jest pełna humoru, dziwnych przygód i ważnych lekcji o zachowaniu, rodzinie i skromności. Klimat stworzony przez Johnny Deppa jest naprawdę wyjątkowy — trochę dziwny, ale przez to zapadający w pamięć. Film jest świetny wizualnie, kolorowy i idealny zarówno dla młodszych, jak i starszych widzów.
+          The Angry Birds Movie to zabawny film animowany oparty na popularnej grze mobilnej. Opowiada historię ptaków żyjących na spokojnej wyspie, których życie zmienia się po przybyciu tajemniczych zielonych świnek. Główny bohater, Red, próbuje odkryć ich prawdziwe zamiary. Film jest pełen humoru, ciekawych postaci i kolorowej animacji. Moim zdaniem to dobra animacja dla dzieci i młodzieży, ponieważ jest śmieszna i pokazuje, jak ważna jest przyjaźń oraz współpraca.
         </p>
       </div>
     </Reveal>
