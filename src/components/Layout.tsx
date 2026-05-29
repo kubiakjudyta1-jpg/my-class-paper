@@ -66,9 +66,15 @@ const Layout = () => {
               </li>
             ))}
             <li>
-              <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-sm font-semibold glass-pill text-secondary-foreground">
-                <Sun className="w-4 h-4 text-yellow-500" />
-                <span>Do wakacji: {getDaysToVacation()} dni</span>
+              <div className="relative flex items-center gap-2 px-4 py-1.5 rounded-xl text-sm font-bold text-white shadow-lg overflow-hidden animate-pulse"
+                style={{
+                  background: 'linear-gradient(135deg, #f59e0b 0%, #ef4444 50%, #ec4899 100%)',
+                  boxShadow: '0 4px 20px rgba(245, 158, 11, 0.5), inset 0 1px 0 rgba(255,255,255,0.3)',
+                  border: '1px solid rgba(255,255,255,0.4)',
+                }}
+              >
+                <Sun className="w-4 h-4 text-yellow-100 drop-shadow" />
+                <span className="tracking-wide drop-shadow">Do wakacji: <span className="text-yellow-100 text-base">{getDaysToVacation()}</span> dni ☀️</span>
               </div>
             </li>
           </ul>
