@@ -68,9 +68,9 @@ const Layout = () => {
             <li>
               <div className="relative flex items-center gap-2 px-4 py-1.5 rounded-xl text-sm font-bold text-white shadow-lg overflow-hidden animate-pulse"
                 style={{
-                  background: 'linear-gradient(135deg, #f59e0b 0%, #ef4444 50%, #ec4899 100%)',
-                  boxShadow: '0 4px 20px rgba(245, 158, 11, 0.5), inset 0 1px 0 rgba(255,255,255,0.3)',
-                  border: '1px solid rgba(255,255,255,0.4)',
+                  background: 'linear-gradient(135deg, #0c1e3d 0%, #1e3a8a 50%, #1e40af 100%)',
+                  boxShadow: '0 4px 20px rgba(30, 58, 138, 0.55), inset 0 1px 0 rgba(255,255,255,0.25)',
+                  border: '1px solid rgba(255,255,255,0.3)',
                 }}
               >
                 <Sun className="w-4 h-4 text-yellow-100 drop-shadow" />
