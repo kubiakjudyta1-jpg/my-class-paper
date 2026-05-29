@@ -73,22 +73,6 @@ const Layout = () => {
             </li>
           </ul>
         </nav>
-                  end={to === "/"}
-                  className={({ isActive }) =>
-                    `flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-sm font-semibold transition-all ${
-                      isActive
-                        ? "glass-pill-active text-primary-foreground"
-                        : "glass-pill text-secondary-foreground"
-                    }`
-                  }
-                >
-                  <Icon className="w-4 h-4" />
-                  <span className="hidden sm:inline">{label}</span>
-                </NavLink>
-              </li>
-            ))}
-          </ul>
-        </nav>
       </header>
 
       {/* Main */}
