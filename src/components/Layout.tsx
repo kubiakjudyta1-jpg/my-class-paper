@@ -1,5 +1,13 @@
 import { NavLink, Outlet } from "react-router-dom";
-import { Lightbulb, Newspaper, Trophy, Calendar, Gift, BookOpen, Mail, MessageSquare } from "lucide-react";
+import { Lightbulb, Newspaper, Trophy, Calendar, Gift, BookOpen, Mail, MessageSquare, Sun } from "lucide-react";
+
+const VACATION_START = new Date(2026, 5, 27); // 27 czerwca 2026
+const getDaysToVacation = () => {
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const diff = Math.ceil((VACATION_START.getTime() - today.getTime()) / (1000 * 60 * 60 * 24));
+  return Math.max(0, diff);
+};
 
 const navItems = [
   { to: "/", label: "Strona Główna", icon: Newspaper },
@@ -57,6 +65,12 @@ const Layout = () => {
                 </NavLink>
               </li>
             ))}
+            <li>
+              <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-sm font-semibold glass-pill text-secondary-foreground">
+                <Sun className="w-4 h-4 text-yellow-500" />
+                <span>Do wakacji: {getDaysToVacation()} dni</span>
+              </div>
+            </li>
           </ul>
         </nav>
       </header>
