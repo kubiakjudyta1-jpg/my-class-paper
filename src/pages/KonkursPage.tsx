@@ -22,28 +22,18 @@ const KonkursPage = () => (
       <div className="text-center space-y-3">
         <Camera className="w-16 h-16 text-primary mx-auto" />
         <h3 className="text-2xl font-bold text-card-foreground">
-          Nowy konkurs fotograficzny: „Wiosna w obiektywie"
+          Wyniki konkursu fot. pt. „Wiosna w obiektywie"
         </h3>
       </div>
       <p className="text-foreground leading-relaxed">
-        W naszym otoczeniu zaczynają się pojawiać pierwsze oznaki wiosny. Z tego powodu nasza redakcja ma zaszczyt ogłosić konkurs fotograficzny dla klas <strong>4–8</strong> pt. „Wiosna w obiektywie". Zwycięzca będzie mógł napisać swój krótki artykuł i pokazać nam swoje najlepsze zdjęcie w następnym wydaniu gazetki oraz otrzyma <strong>małą słodką nagrodę</strong>.
+        Termin zgłaszania prac do naszego konkursu fotograficznego „Wiosna w obiektywie" już minął. Bardzo dziękujemy wszystkim uczestnikom za nadesłane zdjęcia — było ich naprawdę wiele, a każde z nich pokazywało wiosnę z innej, niepowtarzalnej perspektywy. Wybór nie był łatwy, ale po długich naradach redakcja podjęła decyzję.
       </p>
-
-      <div className="glass rounded-xl p-5 space-y-2">
-        <p className="font-bold text-secondary-foreground inline-flex items-center gap-2">
-          <CalendarClock className="w-5 h-5 text-primary" />
-          Termin zgłaszania prac:
-        </p>
-        <p className="text-2xl font-bold text-primary">28 kwietnia 2026 r.</p>
-        <p className="text-muted-foreground inline-flex items-center gap-2">
-          <Mail className="w-4 h-4" />
-          zarowkasp8@gmail.com
-        </p>
-      </div>
-
-      <p className="text-center text-foreground font-semibold">Zachęcamy do udziału!</p>
+      <p className="text-foreground leading-relaxed">
+        Zwycięskie zdjęcie wraz z krótkim artykułem autora pojawi się w następnym wydaniu gazetki, a laureat otrzyma <strong>małą słodką nagrodę</strong>. Serdecznie gratulujemy i zapraszamy do śledzenia kolejnych numerów ŻARÓWKI!
+      </p>
     </Reveal>
   </div>
 );
 
 export default KonkursPage;
+
