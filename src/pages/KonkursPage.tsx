@@ -1,6 +1,7 @@
 import { Trophy, Camera } from "lucide-react";
 import { Reveal } from "@/components/Reveal";
 import wiosnaWObiektywie from "@/assets/wiosna-w-obiektywie.jpg";
+import michalDyplom from "@/assets/michal-dyplom.jpg";
 
 const KonkursPage = () => (
   <div className="space-y-8 max-w-2xl mx-auto">
