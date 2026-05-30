@@ -1,5 +1,6 @@
-import { Trophy, Camera, CalendarClock, Mail } from "lucide-react";
+import { Trophy, Camera } from "lucide-react";
 import { Reveal } from "@/components/Reveal";
+import wiosnaWObiektywie from "@/assets/wiosna-w-obiektywie.jpg";
 
 const KonkursPage = () => (
   <div className="space-y-8 max-w-2xl mx-auto">
@@ -25,15 +26,35 @@ const KonkursPage = () => (
           Wyniki konkursu fot. pt. „Wiosna w obiektywie"
         </h3>
       </div>
+
       <p className="text-foreground leading-relaxed">
-        Termin zgłaszania prac do naszego konkursu fotograficznego „Wiosna w obiektywie" już minął. Bardzo dziękujemy wszystkim uczestnikom za nadesłane zdjęcia — było ich naprawdę wiele, a każde z nich pokazywało wiosnę z innej, niepowtarzalnej perspektywy. Wybór nie był łatwy, ale po długich naradach redakcja podjęła decyzję.
+        Mamy zwycięzcę naszego konkursu fotograficznego „Wiosna w obiektywie"! Pierwsze miejsce zajął <strong>Michał Gierlicz z klasy 6b</strong>. Serdecznie gratulujemy! Poniżej krótka rozmowa, którą przeprowadziła z nim nasza redakcja.
       </p>
-      <p className="text-foreground leading-relaxed">
-        Zwycięskie zdjęcie wraz z krótkim artykułem autora pojawi się w następnym wydaniu gazetki, a laureat otrzyma <strong>małą słodką nagrodę</strong>. Serdecznie gratulujemy i zapraszamy do śledzenia kolejnych numerów ŻARÓWKI!
-      </p>
+
+      <div className="glass rounded-xl p-5 space-y-2 text-foreground leading-relaxed">
+        <p><strong>— Cześć, jak się nazywasz?</strong></p>
+        <p>— Michał.</p>
+        <p><strong>— Zająłeś pierwsze miejsce w konkursie pt. „Wiosna w obiektywie". Powiedz mi, czy interesujesz się fotografowaniem na co dzień?</strong></p>
+        <p>— Tak, najczęściej robię zdjęcia wtedy, kiedy chodzę na spacery z moją rodziną, ale też kiedy idę do sklepu czy na basen.</p>
+        <p><strong>— Długo już się tym interesujesz?</strong></p>
+        <p>— Już trochę czasu, można by powiedzieć, że od 4 klasy.</p>
+        <p><strong>— To świetnie! Gratulujemy i życzymy dalszych sukcesów!</strong></p>
+        <p>— Dzięki.</p>
+      </div>
+
+      <figure className="space-y-2">
+        <img
+          src={wiosnaWObiektywie}
+          alt="Zwycięskie zdjęcie konkursu Wiosna w obiektywie — motyl rusałka pawik na gałęzi kwitnącej tarniny, autor: Michał Gierlicz, klasa 6b"
+          className="w-full rounded-xl shadow-lg"
+          loading="lazy"
+        />
+        <figcaption className="text-center text-sm text-muted-foreground italic">
+          Zwycięskie zdjęcie — fot. Michał Gierlicz, kl. 6b
+        </figcaption>
+      </figure>
     </Reveal>
   </div>
 );
 
 export default KonkursPage;
-
