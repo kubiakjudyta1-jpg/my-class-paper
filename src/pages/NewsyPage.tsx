@@ -11,9 +11,9 @@ const NewsyPage = () => (
 
     <div className="grid md:grid-cols-2 gap-8">
       <Reveal as="article" className="space-y-4">
-        <h3 className="text-2xl font-bold text-card-foreground">Drugie wydanie!</h3>
+        <h3 className="text-2xl font-bold text-card-foreground">Aktualności</h3>
         <p className="drop-cap leading-relaxed text-foreground">
-          Z przyjemnością prezentujemy drugie wydanie naszej szkolnej gazetki. Po pierwszym numerze, który spotkał się z dużym zainteresowaniem, przygotowaliśmy dla Was jeszcze więcej ciekawych treści. Zapraszamy do lektury!
+          W tej sekcji znajdziecie najświeższe wieści prosto z naszej szkoły i nie tylko. Przygotowaliśmy dla Was aktualności, recenzje oraz ciekawostki, które warto przeczytać. Zajrzyjcie koniecznie!
         </p>
       </Reveal>
       <Reveal delay={120} className="glass rounded-xl overflow-hidden">
